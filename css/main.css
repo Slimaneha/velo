@@ -95,145 +95,174 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-    /* Class préfêtes personel */ 
+/* Class préfêtes personel */
 
-   
-    ul li{
-        list-style: none;
+
+ul li {
+    list-style: none;
+}
+
+#buttonStart {
+    width: 50%;
+    text-align: center;
+}
+
+#start {
+    opacity: 2 !important;
+    flex-wrap: wrap !important;
+}
+
+#UberPage {
+    display: none;
+    margin-top: 2em;
+
+}
+
+#UberPage ul li div {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+
+
+
+i {
+    color: white;
+    font: 25px;
+    justify-items: start;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fin class personel */
+
+
+
+
+
+
+
+.btn {
+    border: none;
+}
+
+/* Police d'écrtiture */
+
+@font-face {
+    font-family: " police_tire ";
+    src: url(../font/The_Black_Box-FFP.ttf)
+}
+
+
+.police-principal {
+    font-family: " police_tire ";
+    font-size: 30px;
+}
+
+
+.centre {
+    text-align: center;
+}
+
+
+
+.Cartbutton {
+    width: 100%;
+}
+
+select option {
+    text-align: center;
+}
+
+
+#UberPages {
+    display: none !important;
+    margin-top: 3em;
+}
+
+#UberPage ul li {
+    list-style: none;
+    margin-left: 1em;
+    text-align: center;
+}
+
+
+.modalUberHeader,
+.modal-footerUber {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center !important;
+
+}
+
+#listeUber {
+    animation-name: listeUber;
+    animation-duration: 2s;
+    transition: 2s;
+}
+
+@keyframes listeUber {
+
+    0% {
+        margin-left: 10em;
+        opacity: 0.1
     }
 
-    #buttonStart{
-        width: 50%; 
-        text-align: center;
+    100%{
+        margin-left: 0em;
+        opacity: 1;
     }
-
-    #start{
-        opacity: 2 !important;
-        flex-wrap: wrap !important;
-    }
-
-    #UberPage {
-        display: none;
-        margin-top: 2em;
-        
-    }
-
-    #UberPage ul li div {
-        background-color: #2a2a2a; 
-        color:white;
-    }
-    
-
-  
-
-    i {
-        color : white  ; 
-        font: 25px; 
-        justify-items: start;
-    }
+}
 
 
 
-    .flex {
-        display: flex; 
-        justify-content: center; 
-    }
+.modal-bodyUber {
+    background-color: #71BF44;
+    color: #000;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
 
 
+.cartUberHeader {
+    background-color: #000;
+    color: #71BF44;
+}
 
-    
-    
+.card-bodyUber {
+    color: white;
+    background-color: #000;
+    border: none;
+}
 
-    
+.card-footerUber {
+    background-color: #000;
+    border: none;
 
+}
 
-   
-
-   
-      
-
-       @keyframes carteUn {
-           0% {
-                margin-top: 10em;
-           }
-
-           100%{
-               margin-top: 0px;
-           }
-       }
-
- 
-    /* Fin class personel */ 
-      
-
-   
-
-
-   
-
-    .btn {
-        border: none; 
-    }
-
-    /* Police d'écrtiture */ 
-
-    @font-face {
-        font-family : " police_tire " ;
-        src : url(../font/The_Black_Box-FFP.ttf)
-    }
-    
-    
-    .police-principal {
-        font-family : " police_tire " ;
-        font-size: 30px;
-    }
-
-
-   .centre {
-       text-align: center; 
-   }
-  
-
-  
-   button {
-       width: 100%;
-   }
-
-   select option {
-       text-align: center;
-   }
-
-
-   #UberPages{
-       display: none !important;
-       margin-top: 3em;
-   }
-
-   ul li {
-       list-style: none; 
-       margin-left: 1em;
-       text-align: center;
-   }
-
-   
-
-   .cartUberHeader{
-       background-color: #000 ; 
-       color: #71BF44;
-       }
-
-   .card-bodyUber{
-       color: white;
-       background-color: #000;
-       border: none;
-   }
-
-   .card-footerUber{
-       background-color: #000; 
-       border: none; 
-       
-   }
-    
 
 
 
@@ -244,30 +273,34 @@ textarea {
 
 
 
-.nav-link , .navbar-brand {
-    color: white !important;   
+.nav-link,
+.navbar-brand {
+    color: white !important;
 }
 
 
 
 @media screen and (max-width: 1000px) {
 
-    #UberPage ul  {
-            flex-wrap: wrap !important;
-            justify-content: center !important;
-            text-align: center;
-        }
- 
-
- }
+    #UberPage ul {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
 
 
+}
 
-  /* Display none pour JS */ 
 
-  #retourUn , #retourDeux , #retour3 {
-    display: none; 
-  }
+
+/* Display none pour JS */
+
+#retourUn,
+#retourDeux,
+#retour3 {
+    display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -334,8 +367,10 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -353,9 +388,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -366,13 +401,15 @@ textarea {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after,
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
@@ -384,11 +421,11 @@ textarea {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
 
     /*

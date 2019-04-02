@@ -75,7 +75,7 @@
 
 
         <ul class="">
-            <li><img src="img/9d438724-a1e5-44b9-9172-377503bbffe6-ce6ba1a6-169b-4f42-940e-281421848d23-v1.png" alt=""
+            <li><img class="centre" src="img/9d438724-a1e5-44b9-9172-377503bbffe6-ce6ba1a6-169b-4f42-940e-281421848d23-v1.png" alt=""
                     class="img-fluid"></li>
             <li>
                 <div id="FormUn" class="card">
@@ -91,7 +91,7 @@
                                 <option id="deliveroo" value="2"></option>
                             </select>
                         </p>
-                        <button onclick="select()" class="btn btn-outline-success police-principal">(Suivant )</button>
+                        <button onclick="select()" class="btn btn-outline-success police-principal Cartbutton">(Suivant )</button>
                     </div>
                 </div>
             </li>
@@ -111,9 +111,9 @@
 
     <div id="UberPage">
 
-        <ul class="flex">
+        <ul id="listeUber" class="flex">
             <li>
-                <div class="card mb-3 d-inline-block" style="max-width: 20rem;">
+                <div  class="card mb-3 d-inline-block" style="max-width: 20rem;">
                     <div class="card-header policeBis">Votre satisfaction </div>
                     <div class="card-body">
                         <img src="img/5200034b-55f8-4125-84c9-975c51c48921-ce6ba1a6-169b-4f42-940e-281421848d23-v1.png" alt="" class="img-fluid">
@@ -122,10 +122,10 @@
                         <p class="card-text policeBis">êtes vous satisfait de votre commande Uber eats  livrée à vélo ? </p>
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-success police-principal">(En savoirs plus  )</button>
+                        <button type="button"  data-toggle="modal" data-target="#exampleModalCentered" class="btn Cartbutton btn-outline-success police-principal">(En savoirs plus  )</button>
 
                       </div>
-                </div>
+                    </div>
             </li>
             <li>
                 <div class="card  mb-3 d-inline-block" style="max-width: 20rem;">
@@ -137,7 +137,7 @@
                         <p class="card-text policeBis">Suivez-moi pour en savoir plus sur le metier    </p>
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-success police-principal">(En savoirs plus  )</button>
+                        <button type="button" data-toggle="modal" data-target="#exampleModalCentered2" class="btn btn-outline-success police-principal Cartbutton">(En savoirs plus  )</button>
 
                       </div>
                 </div>
@@ -151,7 +151,7 @@
                         <p class="card-text policeBis">Trouvez les reponses à vos question sur le metier certaine régles  </p>
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-outline-success police-principal">(En savoirs plus  )</button>
+                        <button type="button" data-toggle="modal" data-target="#exampleModalCentered3" class="btn btn-outline-success police-principal Cartbutton">(En savoirs plus  )</button>
 
                       </div>
                     </div>
@@ -166,12 +166,76 @@
 
 
 
+    <!--Mondial Uber pages -->
+
+
+      <!-- Button trigger modal -->
+
+  
+      <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalUberHeader">
+                <h5 class="modal-title centre " id="exampleModalCenteredLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modal-bodyUber centre ">
+                ...
+              </div>
+              <div class="modal-footer modal-footerUber">
+                  <button type="button"  data-dismiss="modal" class="btn btn-outline-danger  police-principal Cartbutton"> (Fermer) </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="modal" id="exampleModalCentered2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header modalUberHeader">
+                  <h5 class="modal-title centre " id="exampleModalCenteredLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body modal-bodyUber centre ">
+                  ...
+                </div>
+                <div class="modal-footer modal-footerUber">
+                    <button type="button"  data-dismiss="modal" class="btn btn-outline-danger  police-principal Cartbutton"> (Fermer) </button>
+  
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
 
-
-
+          <div class="modal" id="exampleModalCentered3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modalUberHeader">
+                    <h5 class="modal-title centre " id="exampleModalCenteredLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body modal-bodyUber centre ">
+                    ...
+                  </div>
+                  <div class="modal-footer modal-footerUber">
+                      <button type="button"  data-dismiss="modal" class="btn btn-outline-danger  police-principal Cartbutton"> (Fermer) </button>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
