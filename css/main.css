@@ -220,6 +220,20 @@ select option {
     transition: 2s;
 }
 
+
+.CardUber{
+    color: white; 
+    background-color: #2a2a2a;
+}
+
+#flexDeux li  {
+        margin-bottom: 5px;    
+}
+
+    #flexDeux div:hover {
+    background-color: white; 
+    color: #2a2a2a;
+}
 @keyframes listeUber {
 
     0% {
