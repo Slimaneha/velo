@@ -129,6 +129,7 @@ textarea {
     i {
         color : white  ; 
         font: 25px; 
+        justify-items: start;
     }
 
 
@@ -250,6 +251,12 @@ textarea {
 
 
 @media screen and (max-width: 1000px) {
+
+    #UberPage ul  {
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            text-align: center;
+        }
  
 
  }
